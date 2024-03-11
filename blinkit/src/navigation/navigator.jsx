@@ -1,31 +1,24 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "../pages/home/home";
 
-import Cart from "../pages/cart/cart";
-
-import Header from "../componets/header/header";
+// Create a browser router configuration
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <>
-        <Header />
         <Home />
-      </>
-    ),
-  },
-  {
-    path: "/cart",
-    element: (
-      <>
-        <Header />
-        <Cart />
       </>
     ),
   },
 ]);
 
+// Define a component for providing the router
 const Navigator = () => {
+  // Provide the router using RouterProvider
   return <RouterProvider router={router} />;
 };
+
+// Export the Navigator component as default
 export default Navigator;

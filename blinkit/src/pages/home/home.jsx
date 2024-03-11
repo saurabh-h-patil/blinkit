@@ -1,8 +1,10 @@
-import { useContext } from "react";
-
-import { ContextApi } from "../../context/context";
+import Header from "../../components/header/header";
 
 const Home = () => {
-  return <div></div>;
+  return (
+    <div style={{ width: "100vw", height: "100vh" }}>
+      <Header />
+    </div>
+  );
 };
 export default Home;
