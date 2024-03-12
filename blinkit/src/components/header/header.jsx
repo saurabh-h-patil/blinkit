@@ -1,9 +1,9 @@
-import Logo from "../atoms/Logo";
-import Cartbutton from "../atoms/cartbutton";
-import Location from "../atoms/location";
-import LoginButton from "../atoms/loginbutton";
-import Searchbar from "../atoms/searchbar";
-import Grid from "@mui/material/Grid";
+import { Grid } from "@mui/material";
+import Logo from "./headeratoms/Logo";
+import Cartbutton from "./headeratoms/cartbutton";
+import Location from "./headeratoms/location";
+import LoginButton from "./headeratoms/loginbutton";
+import Searchbar from "./headeratoms/searchbar";
 
 const Header = () => {
   return (

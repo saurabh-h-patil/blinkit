@@ -1,5 +1,4 @@
-import React from "react";
-import Blinklogo from "../../assets/blinkitlogo.svg";
+import Blinklogo from "../../../assets/blinkitlogo.svg";
 const Logo = () => {
   return (
     <>
