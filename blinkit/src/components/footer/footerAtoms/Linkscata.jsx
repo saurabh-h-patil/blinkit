@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Categories from "../../lib/data/categories.json";
+import { Box, List, ListItem } from "@mui/material";
 const UsefulLinks = () => {
   const Links = [
     "About",
@@ -17,8 +18,7 @@ const UsefulLinks = () => {
     "Contact",
     "Partner",
     "Express",
-    "Local",
-    "Spotlight",
+    "Seller",
     "Warehouse",
     "Deliver",
   ];
@@ -31,21 +31,31 @@ const UsefulLinks = () => {
   }));
   return (
     <>
-      <Grid container spacing={2}>
-        <Grid xs={6}>
-          <h4>Categories</h4>
-          <Grid>
-            {allCategories.map((cat) => (
-              <Grid key={cat.id}>{cat.text} </Grid>
+      {" "}
+      <Grid
+        xs={12}
+        style={{ display: "flex", padding: "0px", marginBottom: "20px" }}
+      >
+        <Grid container xs={4}>
+          <h4>Useful Links</h4>
+
+          <Grid container rowSpacing={0.5} columnSpacing={{ md: 0.5 }}>
+            {allLinks.map((cat) => (
+              <Grid item xs={4} key={cat.id}>
+                <ListItem item key={cat.id} style={{ padding: "0px" }}>
+                  {cat.title}
+                </ListItem>
+              </Grid>
             ))}
           </Grid>
-        </Grid>
-        <Grid xs={6}>
-          <h4>UsefulLinks</h4>
-          <Grid style={{ rowGap: "0.5rem" }}>
-            {allLinks.map((brand, i) => (
-              <Grid xs={1} key={i} style={{ alignItems: "center" }}>
-                <div>{brand.title}</div>
+        </Grid>{" "}
+        <Grid container xs={8}>
+          <h4>Categories</h4>
+
+          <Grid container rowSpacing={0.5} columnSpacing={{ md: 0 }}>
+            {allCategories.map((cat) => (
+              <Grid item xs={4} key={cat.id}>
+                <ListItem style={{ padding: "0px" }}>{cat.text}</ListItem>
               </Grid>
             ))}
           </Grid>
