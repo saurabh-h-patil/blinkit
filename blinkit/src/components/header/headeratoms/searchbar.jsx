@@ -19,7 +19,6 @@ const Searchbar = () => {
         <InputBase
           placeholder="Search…"
           inputProps={{ "aria-label": "search" }}
-          startIcon={<SearchIcon />}
         />
       </div>
     </>
