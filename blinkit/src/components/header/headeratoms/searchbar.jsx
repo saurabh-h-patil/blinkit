@@ -11,6 +11,7 @@ const Searchbar = () => {
           display: "flex",
           alignContent: "center",
           paddingLeft: "10px",
+          position: "relative",
         }}
       >
         <IconButton edge="start" color="inherit" aria-label="search">

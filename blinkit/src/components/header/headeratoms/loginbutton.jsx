@@ -7,6 +7,7 @@ const LoginButton = () => {
         fontSize: "18px",
         fontWeight: "400Px",
         color: "black",
+        position: "relative",
       }}
     >
       Login

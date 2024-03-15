@@ -15,6 +15,8 @@ const Header = () => {
           justifyContent: "center",
           alignItems: "center",
           borderBottom: "1px solid rgb(238, 238, 238) ",
+          position: "sticky",
+          width: "100vw",
         }}
       >
         <Grid item xs={1}>

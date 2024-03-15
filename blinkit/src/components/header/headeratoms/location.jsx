@@ -1,7 +1,11 @@
 const Location = () => {
   return (
     <>
-      <div></div>
+      <div
+        style={{
+          position: "relative",
+        }}
+      ></div>
     </>
   );
 };

@@ -4,7 +4,7 @@ import PaymentPatners from "./footerAtoms/paymentPatners";
 
 const Footer = () => {
   return (
-    <div style={{ margin: "48px 119px 119px" }}>
+    <div style={{ margin: "48px 119px 119px", position: "absolute" }}>
       <UsefulLinks />
       <AllBrands />
       <PaymentPatners />
