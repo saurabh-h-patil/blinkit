@@ -13,8 +13,8 @@ const CategoriesList = () => {
         height: "369px",
         width: "1280px",
         position: "relative",
-        left: "20px",
-        left: "20px",
+        left: "40px",
+        right: "20px",
       }}
     >
       <div style={{ columnCount: 10 }}>

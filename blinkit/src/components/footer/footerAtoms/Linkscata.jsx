@@ -32,7 +32,6 @@ const UsefulLinks = () => {
   return (
     <>
       <Grid container spacing={2}>
-        {" "}
         <Grid xs={6} style={{ display: "grid" }}>
           <h4>UsefulLinks</h4>
           <ul style={{ rowGap: "0.5rem", listStyle: "none", columnCount: "3" }}>

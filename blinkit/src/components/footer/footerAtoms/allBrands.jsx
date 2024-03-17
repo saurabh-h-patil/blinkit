@@ -7,12 +7,12 @@ const AllBrands = () => {
   }));
   return (
     <>
-      <Grid style={{ marginLeft: "0px", display: "grid", fontFamily: "" }}>
+      <Grid style={{ display: "grid", fontFamily: "" }}>
         <h4>Brands</h4>
         <ul
           container
           spacing={1}
-          style={{ marginLeft: "0px", columnCount: 10, columnGap: "20px" }}
+          style={{ columnCount: 10, columnGap: "20px" }}
         >
           {allBrands.map((brand, i) => (
             <Link
