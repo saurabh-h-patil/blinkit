@@ -14,14 +14,24 @@ const Header = () => {
         style={{
           justifyContent: "center",
           alignItems: "center",
+          alignContent: "center",
           borderBottom: "1px solid rgb(238, 238, 238) ",
           position: "sticky",
           width: "100vw",
+          height: "86px",
         }}
       >
-        <Grid item xs={1}>
+        <Grid
+          item
+          xs={1}
+          style={{
+            justifyContent: "center",
+            alignItems: "center",
+            objectFit: "cover",
+          }}
+        >
           <Logo />
-        </Grid>{" "}
+        </Grid>
         <Grid item xs={2}>
           <Location />
         </Grid>

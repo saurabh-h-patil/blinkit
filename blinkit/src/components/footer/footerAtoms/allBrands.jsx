@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Brands from "../../lib/data/brandsList.json";
 import Grid from "@mui/material/Grid";
 const AllBrands = () => {
@@ -6,13 +7,27 @@ const AllBrands = () => {
   }));
   return (
     <>
-      <h4>Brands</h4>
-      <Grid container spacing={1} style={{ marginLeft: "0px" }}>
-        {allBrands.map((brand, i) => (
-          <Grid xs={1} key={i} style={{ alignItems: "center" }}>
-            {brand.text}
-          </Grid>
-        ))}
+      <Grid style={{ marginLeft: "0px", display: "grid", fontFamily: "" }}>
+        <h4>Brands</h4>
+        <ul
+          container
+          spacing={1}
+          style={{ marginLeft: "0px", columnCount: 10, columnGap: "20px" }}
+        >
+          {allBrands.map((brand, i) => (
+            <Link
+              key={i}
+              style={{
+                alignItems: "center",
+                listStyle: "none",
+                textDecoration: "none",
+                color: "black",
+              }}
+            >
+              <li key={i}>{brand.text}</li>
+            </Link>
+          ))}
+        </ul>
       </Grid>
     </>
   );
