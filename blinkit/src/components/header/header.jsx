@@ -10,38 +10,49 @@ const Header = () => {
     <>
       <Grid
         container
-        spacing={3}
         style={{
+          display: "flex",
+          position: "sticky",
+          alignContent: "center",
           justifyContent: "center",
           alignItems: "center",
-          alignContent: "center",
-          borderBottom: "1px solid rgb(238, 238, 238) ",
-          position: "sticky",
-          width: "100vw",
           height: "86px",
+          width: "100vw",
         }}
       >
         <Grid
           item
           xs={1}
-          style={{
-            justifyContent: "center",
-            alignItems: "center",
-            objectFit: "cover",
-          }}
+          style={{ display: "flex", padding: "0px", justifyContent: "center" }}
         >
           <Logo />
         </Grid>
-        <Grid item xs={2}>
+        <Grid
+          item
+          xs={2}
+          style={{ display: "flex", padding: "0px", justifyContent: "center" }}
+        >
           <Location />
         </Grid>
-        <Grid item xs={6}>
+        <Grid
+          item
+          xs={6}
+          style={{ display: "flex", padding: "0px", justifyContent: "center" }}
+        >
           <Searchbar />
         </Grid>
-        <Grid item xs={1}>
+        <Grid
+          item
+          xs={1}
+          style={{ display: "flex", padding: "0px", justifyContent: "center" }}
+        >
           <LoginButton />
         </Grid>
-        <Grid item xs={1}>
+        <Grid
+          item
+          xs={1}
+          style={{ display: "flex", padding: "0px", justifyContent: "center" }}
+        >
           <Cartbutton />
         </Grid>
       </Grid>

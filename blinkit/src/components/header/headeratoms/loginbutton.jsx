@@ -8,6 +8,8 @@ const LoginButton = () => {
         fontWeight: "400Px",
         color: "black",
         position: "relative",
+        display: "flex",
+        justifyContent: "space-evenly",
       }}
     >
       Login

@@ -2,14 +2,25 @@ import Blinklogo from "../../../assets/blinkitlogo.svg";
 const Logo = () => {
   return (
     <>
-      <div>
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+
+          position: "relative",
+          height: "60px",
+          width: "134px",
+        }}
+      >
         <img
           src={Blinklogo}
           alt=""
           style={{
-            height: "60px",
-            width: "134px",
+            width: "100%",
+            height: "100%",
             objectFit: "contain",
+
+            position: "absolute",
           }}
         />
       </div>

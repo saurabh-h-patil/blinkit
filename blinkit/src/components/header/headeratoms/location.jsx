@@ -1,11 +1,9 @@
 const Location = () => {
   return (
     <>
-      <div
-        style={{
-          position: "relative",
-        }}
-      ></div>
+      <div style={{ padding: "0px" }}>
+        <h1>location</h1>{" "}
+      </div>
     </>
   );
 };

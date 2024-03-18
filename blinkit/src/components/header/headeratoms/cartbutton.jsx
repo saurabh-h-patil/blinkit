@@ -5,12 +5,7 @@ const Cartbutton = () => {
     <>
       <div>
         <Button
-          style={{
-            width: "100px",
-            height: "50px",
-            backgroundColor: "green",
-            position: "relative",
-          }}
+          style={{ backgroundColor: "green", width: "122px", height: "52px" }}
           variant="contained"
           startIcon={<AddShoppingCartIcon />}
         >

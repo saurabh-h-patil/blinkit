@@ -6,15 +6,15 @@ const Searchbar = () => {
       <div
         style={{
           border: "1px solid rgba(0, 0, 0, 0.04)",
+          padding: "0px",
           borderRadius: "12px",
           height: "47px",
           display: "flex",
-          alignContent: "center",
-          paddingLeft: "10px",
-          position: "relative",
+          justifyContent: "flexstart",
+          marginLeft: "10px",
         }}
       >
-        <IconButton edge="start" color="inherit" aria-label="search">
+        <IconButton edge="start" color="inherit" aria-label="search" style={{}}>
           <SearchIcon />
         </IconButton>
         <InputBase
