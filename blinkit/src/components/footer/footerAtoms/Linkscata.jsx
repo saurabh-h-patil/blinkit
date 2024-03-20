@@ -32,23 +32,26 @@ const UsefulLinks = () => {
   return (
     <>
       <Grid container spacing={2}>
-        <Grid xs={6} style={{ display: "grid" }}>
+        <Grid item xs={6} style={{ display: "grid" }}>
           <h4>UsefulLinks</h4>
           <ul style={{ rowGap: "0.5rem", listStyle: "none", columnCount: "3" }}>
             {allLinks.map((brand, i) => (
-              <Link style={{ textDecoration: "none" }}>
-                <li key={i} style={{ alignItems: "center", color: "black" }}>
+              <Link key={i} style={{ textDecoration: "none" }}>
+                <li style={{ alignItems: "center", color: "black" }}>
                   {brand.title}
-                </li>{" "}
+                </li>
               </Link>
             ))}
           </ul>
         </Grid>
-        <Grid xs={6} style={{ display: "grid" }}>
+        <Grid item xs={6} style={{ display: "grid" }}>
           <h4>Categories</h4>
           <ul style={{ listStyle: "none", padding: 0, columnCount: 3 }}>
-            {allCategories.map((cat) => (
-              <Link style={{ textDecoration: "none", color: "black" }}>
+            {allCategories.map((cat, i) => (
+              <Link
+                key={cat.id}
+                style={{ textDecoration: "none", color: "black" }}
+              >
                 <li key={cat.id}>{cat.text} </li>
               </Link>
             ))}
