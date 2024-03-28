@@ -1,7 +1,7 @@
-import productListSaga from "../AllProducts/productList/productListSlice";
+import productListSlice from "../pages/home/productsLayout/productList/productListSlice";
 
 const reducer = {
-  productsList: productListSaga,
+  productsList: productListSlice,
 };
 
 export default reducer;

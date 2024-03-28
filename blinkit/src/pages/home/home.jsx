@@ -2,7 +2,7 @@ import CategoriesList from "../../components/catagaries/Catagaries";
 import Catagaries from "../../components/catagaries/Catagaries";
 import Footer from "../../components/footer/footer";
 import Header from "../../components/header/header";
-import Products from "../../AllProducts/productList/productsList";
+import Products from "./productsLayout/productList/productsList";
 
 const Home = () => {
   return (

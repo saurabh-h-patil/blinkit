@@ -9,11 +9,7 @@ const AllBrands = () => {
     <>
       <Grid style={{ display: "grid", fontFamily: "" }}>
         <h4>Brands</h4>
-        <ul
-          container
-          spacing={1}
-          style={{ columnCount: 10, columnGap: "20px" }}
-        >
+        <ul style={{ columnCount: 10, columnGap: "20px" }}>
           {allBrands.map((brand, i) => (
             <Link
               key={i}
@@ -24,7 +20,7 @@ const AllBrands = () => {
                 color: "black",
               }}
             >
-              <li key={i}>{brand.text}</li>
+              <li>{brand.text}</li>
             </Link>
           ))}
         </ul>

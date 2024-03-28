@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-const initialState = { isLoading: false, data: null, err: null };
+const initialState = { isLoading: true, data: null, err: null };
 
 const ProductListSlice = createSlice({
   name: "AllProducts",
-  initialState,
+  initialState: initialState,
   reducers: {
     getProducts: (state, action) => {
       state.isLoading = true;
