@@ -1,0 +1,37 @@
+[{
+    
+    "id": 1,
+        "name": "Static Banner",
+        "title": "paan corner banner",
+        "image": "https://cdn.grofers.com/layout-engine/2022-05/new-mweb-1.jpg",
+      
+        "image2": "https://cdn.grofers.com/layout-engine/2022-05/new-mweb-1.jpg", 
+        "action": {
+            "default_uri": "grofers://web-external?web_url=/paan"
+          
+      }
+    },
+    
+   
+    
+   
+   
+ 
+  {
+   
+      "id": 2,
+        "name": "Static Banner",
+        "title": "pb_mweb_downloadapp",
+        "image": "https://cdn.grofers.com/layout-engine/2022-06/Frame-36256.png",
+          "action": {
+            "default_uri": "grofers://web-external?web_url=https://link.blinkit.com/jcJJsOsofpb?utm_source=desktop_feed_banner"
+          }
+       
+      
+    
+
+    
+ 
+   
+    
+  }]
