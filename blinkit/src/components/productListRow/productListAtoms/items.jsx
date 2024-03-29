@@ -1,68 +1,121 @@
+import {
+  Box,
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  Typography,
+} from "@mui/material";
+import CardMedia from "@mui/material/CardMedia";
 const Items = ({ item }) => {
-  console.log("itemssssssssssssssssssssssssss", item);
+  console.log("items", item);
   const fitem = item[0];
   return (
     <>
       <div
         style={{
-          width: "179px",
-          height: "285px",
-          border: "1px solid black",
-          objectFit: "cover",
-          display: "flex",
+          display: "flex ",
           flexDirection: "column",
-          marginRight: "20px",
+          minWidth: " 179px",
+          maxWidth: " 179px",
+          height: "273px",
+          paddingBottom: "20px",
+          alignItems: "center",
+          columnGap: "20px",
+          overflow: " auto hidden",
+          marginRight: " 12px",
+          marginLeft: "12px",
+          background: "rgb(255, 255, 255)",
+          border: " 0.5px solid rgb(232, 232, 232)",
+          boxShadow: "rgba(0, 0, 0, 0.04) 2px 2px 8px",
+          borderRadius: "8px",
+          padding: "5px",
+          boxSizing: "border-box",
         }}
       >
-        <div>
+        <div
+          style={{
+            height: "100%",
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           <img
-            style={{
-              width: "140px",
-              height: "140px",
-              objectFit: "cover",
-              padding: " 0.5rem",
-            }}
             src={fitem.image_url}
-            alt=""
+            style={{ height: "140px", width: "140px", objectFit: "fill" }}
           />
         </div>
         <div
           style={{
-            display: "flex",
-            direction: "rows",
-            padding: "0.5rem ",
-            fontSize: "13px",
-            flexDirection: "column",
+            boxSizing: "border-box",
+            paddingLeft: "0.75rem",
+            paddingRight: "0.75rem",
+            width: "100%",
           }}
         >
-          <div>
-            <p>
-              <b>{fitem.name}</b>
-            </p>
-          </div>
-          <div>{fitem.unit}</div>
-          <div style={{ display: "flex" }}>
-            <div
+          <div
+            style={{
+              display: "flex ",
+              flexDirection: "column",
+
+              width: "100%",
+            }}
+          >
+            <span
               style={{
-                display: "flex",
-                flexDirection: "column",
-                marginRight: "10px",
+                overflow: " hidden",
+                color: "rgb(31, 31, 31)",
+                fontWeight: " 600",
+                fontSize: "13px",
+                lineHeight: "18px",
+                width: " 100%",
+                height: " 36px",
+                marginBottom: " 6px",
               }}
             >
-              <span
-                style={{ fontSize: "14px", fontWeight: " 600 " }}
-              >{`₹${fitem.price}`}</span>
+              {fitem.name}
+            </span>
+            <span
+              style={{
+                alignItems: "center",
+                display: "flex",
+                height: "26px",
+                width: "100%",
+              }}
+            >
+              {fitem.unit}
+            </span>
+          </div>
+          <div
+            style={{
+              display: "flex ",
+              justifyContent: "center",
+              width: "100%",
+              alignItems: "center",
+              justifyContent: " space-between",
+            }}
+          >
+            <div
+              style={{
+                display: "flex ",
+                flexDirection: "column",
+              }}
+            >
+              <span style={{}}> {`₹${fitem.price}`}</span>
               <span
                 style={{
+                  color: " rgb(130, 130, 130)",
+                  fontWeight: " 400",
+                  fontSize: "12px",
                   textDecoration: "line-through",
-                  fontSize: "0.75rem",
-                  position: "relative",
                 }}
               >
+                {" "}
                 {`₹${fitem.mrp}`}
-              </span>
+              </span>{" "}
             </div>
-            <div> ADD TO CART</div>
+            <div>add</div>
           </div>
         </div>
       </div>
