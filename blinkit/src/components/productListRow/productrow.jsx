@@ -42,7 +42,7 @@ const ProductRow = ({ products }) => {
           <Carousel responsive={responsive}>
             {Allproduct.map((item) => {
               return (
-                <Link to={`/details:${item.id}`}>
+                <Link to={`/details/${item[0].product_id}`}>
                   <Items item={item} />{" "}
                 </Link>
               );
