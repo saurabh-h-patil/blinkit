@@ -18,7 +18,6 @@ const UsefulLinks = () => {
     "Partner",
     "Express",
     "Local",
-    "Spotlight",
   ];
   const allCategories = Categories.map((cat) => ({
     id: cat.id,
